@@ -59,6 +59,14 @@ player: Esta tabla, que contiene los detalles de los jugadores, fue filtrada uti
 play_by_play: Se filtró la columna game_id utilizando los IDs de los juegos obtenidos de la tabla game.
 team: No se aplicaron filtros en esta tabla, ya que no fue necesario.
 
-### Importación de las tablas 
+## Incorporación de Datos de Rendimiento de los New York Knicks: Temporadas 2021-2023
+Se han incorporado a nuestro dataset original tres tablas adicionales que contienen datos estadísticos de los jugadores de los New York Knicks correspondientes a la temporada regular 2021-2022, la temporada regular 2022-2023 y los playoffs 2022-2023. Estos conjuntos de datos fueron obtenidos a través de Kaggle y complementan la información existente para un análisis más completo.
+##  Enlaces Relacionados 
+Dataset 2021-2022 NBA players stats
+https://www.kaggle.com/datasets/vivovinco/nba-player-stats
+Dataset 2022-2023 NBA players stats
+https://www.kaggle.com/datasets/vivovinco/20222023-nba-player-stats-regular
+
+### Creación Base de Datos 
 En SQL Server se crea la base de datos y se importan las tablas ya filtradas con las que se va a trabajar, para comenzar con la normalización de los datos realizando un tratamiento de los datos faltantes, una corroboración del tipo de dato de cada columna y  se realiza el casteo de la columna Date para establecerla como índice y así facilitar el análisis temporal.
 
