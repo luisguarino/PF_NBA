@@ -47,7 +47,7 @@ Dichas tablas se analizarán para limpiar y trabajar con las columnas que aporte
 
 El caso estudiado se llevó a cabo en dos sprint, de dos semanas cada uno.
 # Sprint #1
- Creación del repositorio público en github
+### Creación del repositorio público en github
 
 El filtrado de las tablas se realizó mediante Python en Visual Studio Code, con el objetivo de eliminar datos innecesarios para el análisis. Esto fue crucial, ya que uno de los principales motivos era reducir el alto consumo de recursos que implicaba trabajar con grandes volúmenes de información. 
 A cada una de ellas se le realizó:
