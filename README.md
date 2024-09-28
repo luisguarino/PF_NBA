@@ -61,6 +61,7 @@ team: No se aplicaron filtros en esta tabla, ya que no fue necesario.
 
 ## Incorporación de Datos de Rendimiento de los New York Knicks: Temporadas 2021-2023
 Se han incorporado a nuestro dataset original tres tablas adicionales que contienen datos estadísticos de los jugadores de los New York Knicks correspondientes a la temporada regular 2021-2022, la temporada regular 2022-2023 y los playoffs 2022-2023. Estos conjuntos de datos fueron obtenidos a través de Kaggle y complementan la información existente para un análisis más completo.
+
 ##  Enlaces Relacionados 
 Dataset 2021-2022 NBA players stats
 https://www.kaggle.com/datasets/vivovinco/nba-player-stats
