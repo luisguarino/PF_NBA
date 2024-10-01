@@ -1,4 +1,5 @@
-﻿USE [Sportics_LAM]
+﻿CREATE DATABASE Sportics_LAM
+USE [Sportics_LAM]
 GO
 /****** Object:  User [soporte]    Script Date: 28/9/2024 02:30:38 ******/
 CREATE USER [soporte] FOR LOGIN [soporte] WITH DEFAULT_SCHEMA=[dbo]
