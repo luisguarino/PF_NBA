@@ -88,7 +88,7 @@ Se creó una nueva tabla llamada “player stats”.
 Esta tabla se formará mediante un union all con las tablas “2021-2022 nba players stats”, “2022-2023 nba players stats regular” y “2022-2023 nba players stats playoffs”
 Además, se añadirá una columna llamada “player_id” para asignar el identificador correspondiente a cada jugador.
 
-##Jugadores:
+## Jugadores:
 Se llevó a cabo una operación de left join entre las tablas ‘filtered_common_player_info’ y ‘played_filtered’. Esta decisión se tomó debido a que ambas tablas contenían información similar sobre los jugadores de nuestra plantilla. Como resultado de esta unión, se creó una única tabla que incluye a los jugadores que serán objeto de nuestro análisis.
 
 
