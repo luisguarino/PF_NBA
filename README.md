@@ -71,3 +71,25 @@ https://www.kaggle.com/datasets/vivovinco/20222023-nba-player-stats-regular
 ### Creación Base de Datos 
 En SQL Server se crea la base de datos y se importan las tablas ya filtradas con las que se va a trabajar, para comenzar con la normalización de los datos realizando un tratamiento de los datos faltantes, una corroboración del tipo de dato de cada columna y  se realiza el casteo de la columna Date para establecerla como índice y así facilitar el análisis temporal.
 
+## Normalización de la base de Datos
+Cambios en las columnas:
+En la tabla “player_filtered”, se modificó el nombre de la columna “id” a “player_id”.
+En la tabla “filtered_common_player_info”, se realizaron dos cambios:
+La columna “person.id” se renombró como “player_id”.
+La columna “display_first_last” ahora se llama “full_name”.
+
+## Nuevas columnas en las tablas de estadísticas de jugadores:
+En las tablas “2021-2022 nba players stats”, “2022-2023 nba players stats regular” y “2022-2023 nba players stats playoffs”, se agregaron dos columnas:
+“season”: Esta columna contendrá el año de la temporada.
+“season_type”: Indicará en qué fase de la temporada se encuentran los partidos (por ejemplo, temporada regular o playoffs).
+
+## Creación de la tabla “player stats”:
+Se creó una nueva tabla llamada “player stats”.
+Esta tabla se formará mediante un union all con las tablas “2021-2022 nba players stats”, “2022-2023 nba players stats regular” y “2022-2023 nba players stats playoffs”
+Además, se añadirá una columna llamada “player_id” para asignar el identificador correspondiente a cada jugador.
+
+##Jugadores:
+Se llevó a cabo una operación de left join entre las tablas ‘filtered_common_player_info’ y ‘played_filtered’. Esta decisión se tomó debido a que ambas tablas contenían información similar sobre los jugadores de nuestra plantilla. Como resultado de esta unión, se creó una única tabla que incluye a los jugadores que serán objeto de nuestro análisis.
+
+
+
