@@ -94,5 +94,5 @@ Además, se añadirá una columna llamada “player_id” para asignar el identi
 ## Jugadores:
 Se llevó a cabo una operación de left join entre las tablas ‘filtered_common_player_info’ y ‘played_filtered’. Esta decisión se tomó debido a que ambas tablas contenían información similar sobre los jugadores de nuestra plantilla. Como resultado de esta unión, se creó una única tabla que incluye a los jugadores que serán objeto de nuestro análisis.
 
-##Se realizó el diagrama Entidad Relación 
+## Se realizó el diagrama Entidad Relación 
 Después de realizar el filtrado de las tablas, se procedió a establecer las Primary Keys (claves primarias) y las Foreign Keys (claves foráneas) para garantizar la integridad referencial y facilitar las relaciones entre las tablas. Las claves primarias se asignaron a aquellos campos que identifican de manera única a cada registro en sus respectivas tablas.
