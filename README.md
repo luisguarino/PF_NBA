@@ -47,8 +47,11 @@ Dichas tablas se analizarán para limpiar y trabajar con las columnas que aporte
 
 El caso estudiado se llevó a cabo en dos sprint, de dos semanas cada uno.
 # Sprint #1
-### Creación del repositorio público en github
+## Creación del repositorio público en github
+Se inicia creando el repositorio desde la interfaz de GitHub. Luego, se procede a crear una nueva rama a partir de la rama principal (main), a la cual se le denomina "Develop". Posteriormente, se crea una rama adicional llamada "Desarrollo", que deriva de la rama "Develop". Esto permite establecer diferentes entornos de trabajo y facilita la organización del flujo de desarrollo, asegurando que los cambios se integren de manera controlada antes de llegar a la rama principal.
+https://github.com/luisguarino/PF_NBA
 
+##Filtrado de tablas
 El filtrado de las tablas se realizó mediante Python en Visual Studio Code, con el objetivo de eliminar datos innecesarios para el análisis. Esto fue crucial, ya que uno de los principales motivos era reducir el alto consumo de recursos que implicaba trabajar con grandes volúmenes de información. 
 A cada una de ellas se le realizó:
 common_player_info: Se filtró la columna person_id para incluir únicamente a los jugadores pertenecientes al equipo New York Knicks.
@@ -91,5 +94,5 @@ Además, se añadirá una columna llamada “player_id” para asignar el identi
 ## Jugadores:
 Se llevó a cabo una operación de left join entre las tablas ‘filtered_common_player_info’ y ‘played_filtered’. Esta decisión se tomó debido a que ambas tablas contenían información similar sobre los jugadores de nuestra plantilla. Como resultado de esta unión, se creó una única tabla que incluye a los jugadores que serán objeto de nuestro análisis.
 
-
-
+##Se realizó el diagrama Entidad Relación 
+Después de realizar el filtrado de las tablas, se procedió a establecer las Primary Keys (claves primarias) y las Foreign Keys (claves foráneas) para garantizar la integridad referencial y facilitar las relaciones entre las tablas. Las claves primarias se asignaron a aquellos campos que identifican de manera única a cada registro en sus respectivas tablas.
