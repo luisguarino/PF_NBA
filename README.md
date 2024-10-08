@@ -99,34 +99,34 @@ Después de realizar el filtrado de las tablas, se procedió a establecer las Pr
 
 ## Seguridad de la Base de Datos
 En el contexto de la administración de una base de datos en SQL Server, se han llevado a cabo los siguientes pasos para fortalecer la seguridad:
-Creación de un Inicio de Sesión (Login):
+#### Creación de un Inicio de Sesión (Login):
  * Se ha creado un inicio de sesión (login) que permite a los usuarios autenticarse en el sistema.
  * Este proceso garantiza que solo las personas autorizadas puedan acceder a la base de datos.
 #### Creación de un Usuario (User):
  * Se ha definido un usuario asociado al inicio de sesión.
  * Cada usuario tiene permisos específicos para interactuar con la base de datos.
-Asignación de Roles:
+#### Asignación de Roles:
  * Se ha asignado un rol al usuario.
  * Los roles agrupan permisos y privilegios comunes. Por ejemplo, un rol de ‘Lectura’ podría permitir solo consultas, mientras que un rol de ‘Administrador’ tendría acceso completo.
-Configuración de Autenticación del Servidor SQL:
+#### Configuración de Autenticación del Servidor SQL:
  * Se ha modificado la configuración para requerir autenticación mediante nombre de usuario y contraseña al conectarse al servidor SQL.
  * Esto añade una capa adicional de seguridad al proceso de inicio de sesión.
 
 
 ## Automatización de ingesta de datos 
-Creación del Archivo CSV y Carga Inicial:
+#### Creación del Archivo CSV y Carga Inicial:
  * Se genera un archivo CSV que contiene datos en bruto.
  * Estos datos se cargarán posteriormente en nuestra base de datos SQL.
-Uso de Tabla Temporal como Puente:
+#### Uso de Tabla Temporal como Puente:
  * Se ejecuta un procedimiento almacenado que ingresa los datos del archivo CSV en una tabla temporal llamada “Players_Stats_temp”. La cual fue creada antes de este paso.
  * Esta tabla temporal actúa como un puente entre los datos brutos y la tabla final deseada.
-Inserción en la Tabla Principal:
+#### Inserción en la Tabla Principal:
  * A través de otro procedimiento almacenado, los datos de la tabla temporal se transfieren a la tabla “player_stats”.
  * Esta tabla final contiene los datos estructurados y procesados.
-Limpieza de Datos Temporales:
+#### Limpieza de Datos Temporales:
  * Una vez que los datos están en la tabla deseada, se eliminan los registros de la tabla “Players_Stats_temp”.
  * Esto garantiza que solo los datos relevantes permanezcan en la base de datos.
-Automatización Mediante Archivo .bat:
+#### Automatización Mediante Archivo .bat:
  * Para lograr la automatización de este proceso, se crea un archivo .bat.
  * Mediante una tarea programada de Windows, este archivo .bat ejecuta automáticamente los procedimientos almacenados y carga los datos en la base de datos.
 Cabe destacar que los datos estadísticos de nuestros jugadores son recibidos semanalmente en una carpeta de Drive. https://docs.google.com/spreadsheets/d/1HcaEjB-oa6wSCyuJGlF29DeCel_hTiL1iWAMN2NekYw/edit?gid=1179889504#gid=1179889504
