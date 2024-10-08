@@ -102,7 +102,7 @@ En el contexto de la administración de una base de datos en SQL Server, se han 
 Creación de un Inicio de Sesión (Login):
  * Se ha creado un inicio de sesión (login) que permite a los usuarios autenticarse en el sistema.
  * Este proceso garantiza que solo las personas autorizadas puedan acceder a la base de datos.
-Creación de un Usuario (User):
+### Creación de un Usuario (User):
  * Se ha definido un usuario asociado al inicio de sesión.
  * Cada usuario tiene permisos específicos para interactuar con la base de datos.
 Asignación de Roles:
