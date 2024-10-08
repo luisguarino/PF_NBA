@@ -99,7 +99,7 @@ Después de realizar el filtrado de las tablas, se procedió a establecer las Pr
 
 ## Seguridad de la Base de Datos
 En el contexto de la administración de una base de datos en SQL Server, se han llevado a cabo los siguientes pasos para fortalecer la seguridad:
-1- Creación de un Inicio de Sesión (Login):
+1 - Creación de un Inicio de Sesión (Login):
  * Se ha creado un inicio de sesión (login) que permite a los usuarios autenticarse en el sistema.
  * Este proceso garantiza que solo las personas autorizadas puedan acceder a la base de datos.
 2- Creación de un Usuario (User):
