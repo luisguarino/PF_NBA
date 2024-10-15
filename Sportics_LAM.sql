@@ -1,10 +1,4 @@
-﻿USE [Sportics_LAM]
-GO
-/****** Object:  Table [dbo].[common_player_info]    Script Date: 2/10/2024 01:39:32 ******/
-SET ANSI_NULLS ON
-GO
-SET QUOTED_IDENTIFIER ON
-GO
+﻿
 CREATE TABLE [dbo].[common_player_info](
 	[player_id] [int] NOT NULL,
 	[first_name] [nvarchar](50) NOT NULL,
