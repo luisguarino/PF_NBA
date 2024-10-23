@@ -132,6 +132,8 @@ En el contexto de la administración de una base de datos en SQL Server, se han 
 Cabe destacar que los datos estadísticos de nuestros jugadores son recibidos semanalmente en una carpeta de Drive. https://docs.google.com/spreadsheets/d/1HcaEjB-oa6wSCyuJGlF29DeCel_hTiL1iWAMN2NekYw/edit?gid=1179889504#gid=1179889504
 Estos datos se transforman en un archivo plano en formato CSV, que se almacena en una carpeta especialmente designada para volcar la información en nuestra base de datos SQL. La manipulación de los datos será responsabilidad exclusiva del ingeniero de datos de la consultora.
 
+# Sprint #2
+
 ## Transformación de datos
 En Power BI, realizamos diversas transformaciones utilizando SQL Server. Al cambiar el formato de algunas columnas a porcentaje, fue necesario dividir los valores por 10,000, ya que originalmente presentaban cifras muy elevadas. Además, corregimos ciertos errores en los datos, como la presencia de un cero adicional al final de algunos valores en varias columnas. Para solucionar este inconveniente, dividimos esos valores por 10.
 También, eliminamos algunas columnas a través de Power Query ya que no serán necesarias para la creación del dashboard y análisis del mismo.
